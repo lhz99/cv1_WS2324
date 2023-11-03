@@ -20,6 +20,7 @@ def display_image(img):
     #
     # You code here
     #
+    return plt.imshow(img)
 
 
 def save_as_npy(path, img):
@@ -31,6 +32,7 @@ def save_as_npy(path, img):
     #
     # You code here
     #
+    return np.save(path, img)
 
 
 def load_npy(path):
@@ -44,6 +46,7 @@ def load_npy(path):
     #
     # You code here
     #
+    return np.load(path)
 
 
 def mirror_horizontal(img):
@@ -58,6 +61,7 @@ def mirror_horizontal(img):
     #
     # You code here
     #
+    return np.fliplr(img)
 
 
 def display_images(img1, img2):
@@ -70,3 +74,8 @@ def display_images(img1, img2):
     #
     # You code here
     #
+    plt.subplot(1, 2, 1)
+    plt.imshow(img1)
+    plt.subplot(1, 2, 2)
+    plt.imshow(img2)
+    plt.show()
